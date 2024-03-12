@@ -7,6 +7,9 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
+  "config": {
+    "prefix": "./my_modules"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
