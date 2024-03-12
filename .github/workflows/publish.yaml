@@ -17,7 +17,9 @@ jobs:
         run: cd client npm install #here
 
       - name: Build
-        run: cd client npm run build # The build command of your project
+        run: |
+          cd client
+          npm run build
 
       - name: Push
         uses: s0/git-publish-subdir-action@develop
