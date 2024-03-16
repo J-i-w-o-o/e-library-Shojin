@@ -3,6 +3,7 @@ const cors = require('cors')
 const dotenv = require('dotenv')
 const path = require('path')
 const cookieParser = require('cookie-parser')
+const path = require('path')
 dotenv.config()
 
 // Import the connectDB function to establish a connection with MongoDB
