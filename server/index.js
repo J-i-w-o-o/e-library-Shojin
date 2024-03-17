@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const dotenv = require('dotenv')
 const path = require('path')
+const cookieParser = require('cookie-parser')
 dotenv.config()
 
 // Import the connectDB function to establish a connection with MongoDB
@@ -16,8 +17,6 @@ const courses = require('./router/courses')
 const learningMaterials = require('./router/learningMaterials')
 const token = require('./router/token')
 const adminDashboard = require('./router/admin')
-
-const cookieParser = require('cookie-parser')
 
 // Create an Express application
 const app = express()

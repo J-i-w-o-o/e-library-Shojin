@@ -14,6 +14,7 @@ const { checkRole, ROLES } = require('../middleware/auth-middleWare')
 const { verifyToken, generateTokens } = require('../middleware/verifyToken')
 const { redisClient, DEFAULT_EXP } = require('../utils/redisClient')
 const limiter = require('../middleware/rateLimiter')
+const mongoSanitize = require('express-mongo-sanitize')
 
 
 // User registration endpoint
