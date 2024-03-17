@@ -20,6 +20,10 @@
   font-size: 1.6rem;
   margin-bottom: 0;
 }
+
+.chart-container h3 {
+  margin: 0;
+}
 .dashboard-container {
   display: flex;
   align-items: center;
