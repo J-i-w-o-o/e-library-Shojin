@@ -3,7 +3,6 @@ const cors = require('cors')
 const dotenv = require('dotenv')
 const path = require('path')
 const cookieParser = require('cookie-parser')
-const path = require('path')
 dotenv.config()
 
 // Import the connectDB function to establish a connection with MongoDB
@@ -19,10 +18,7 @@ const learningMaterials = require('./router/learningMaterials')
 const token = require('./router/token')
 const adminDashboard = require('./router/admin')
 
-const adminDashboard = require('./router/admin')
-
-// Import the redisClient and DEFAULT_EXP variables
-const { redisClient, DEFAULT_EXP } = require('./utils/redisClient')
+const cookieParser = require('cookie-parser')
 
 // Create an Express application
 const app = express()
