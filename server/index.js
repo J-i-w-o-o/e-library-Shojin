@@ -19,6 +19,8 @@ const learningMaterials = require('./router/learningMaterials')
 const token = require('./router/token')
 const adminDashboard = require('./router/admin')
 
+const adminDashboard = require('./router/admin')
+
 // Import the redisClient and DEFAULT_EXP variables
 const { redisClient, DEFAULT_EXP } = require('./utils/redisClient')
 
