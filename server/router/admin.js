@@ -77,17 +77,14 @@ router.get('/get-statistics', async (req, res) => {
       return {
         program: program.title,
         percentage: matchingStat ? matchingStat.percentage : 0,
-        count: matchingStat ? matchingStat.count : 0, 
+        count: matchingStat ? matchingStat.count : 0, // Add count of students for each program
       }
     })
 
-    const resultWithoutMinorSubjects = result.filter(entry => entry.program !== "Minor subjects")
-
-    const totalCount = elibraryStats.reduce((acc, stat) => acc + stat.count, 0)
+    const resultWithoutMinorSubjects = result.filter(entry => entry.program !== "Minor subjects");
 
     res.status(200).json({
       elibraryStats: resultWithoutMinorSubjects,
-      totalCount: totalCount
     })
   } catch (error) {
     res.status(500).json({ error: error.message })

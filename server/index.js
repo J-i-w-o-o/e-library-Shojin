@@ -19,6 +19,8 @@ const learningMaterials = require('./router/learningMaterials')
 const token = require('./router/token')
 const adminDashboard = require('./router/admin')
 
+const cookieParser = require('cookie-parser')
+
 // Create an Express application
 const app = express()
 
